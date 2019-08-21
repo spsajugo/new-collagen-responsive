@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*text line formatting*/
+.salonName {
+    font-size: 18px;
+}
+
+/* Style the header */
+.header {
+    background-color: #1E96A4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 33%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 481px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+
+    .salonName {
+        text-size: 2px;
+    }
+}
+
+.footergreen {
+    background-color: #108667;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #1E96A4;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    line-height: 150%;
+}
